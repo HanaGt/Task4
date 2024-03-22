@@ -10,12 +10,12 @@ export default function Home() {
       <div className="w-custom-width flex justify-between items-start mb-4  p-[6px] gap-[556px]">
         <div className="flex flex-col pl-5">
           <h1 className="text-3xl font-bold text-custom-text-darkblue pl-10">Opportunities</h1>
-          <p className="pl-10">Showing {cardData.length} results</p>
+          <p className="pl-10 font-epilogue font-normal text-[16px] text-[#7C8493] ">Showing {cardData.length} results</p>
         </div>
         <div className="flex gap-1">
-          <p>Sort by:</p>
+          <p className="font-epilogue font-normal text-[16px] text-[#7C8493]">Sort by:</p>
           <div className="flex items-center gap-1">
-            <p>Most relevant</p>
+            <p className="font-epilogue font-normal text-[16px] text-[#7C8493]">Most relevant</p>
             <FaAngleDown />
           </div>
         </div>

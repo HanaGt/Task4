@@ -9,12 +9,12 @@ import Card from "@/components/Card";
 const JobDetail = () => {
   return (
     <>
-        <div className="flex flex-col items-center justify-center w-screen my-4 p-8">
+        <div className="flex flex-col items-center justify-center w-screen my-4 p-7">
       
-      <div className="flex flex-col w-custom-width gap-10">
-      <div className="flex flex-col gap-2">
-      <MiniCard logo={""} title={"Social"}/>
-          <h1 className="font-bold text-2xl">Description</h1>
+      <div className="flex flex-col w-custom-width gap-10 ">
+      <div className="flex flex-col gap-2 w-[919px] ">
+      <MiniCard />
+          <h1 className="font-bold text-2xl pt-7">Description</h1>
           <p>
             As a Social Media Assistant, you will work closely with the social
             media manager or marketing team to execute social media strategies

@@ -1,26 +1,28 @@
-import React from 'react';
+import React from "react";
 
-
-interface JobCardProps {
-  logo: string;
-  title: string;
-}
-
-const JobCard: React.FC<JobCardProps> = ({ logo, title }) => {
+const MiniCard = () => {
   return (
-    <div className=" h-35 bg-white rounded-lg shadow-md flex items-center justify-between ">
+    <div className="flex items-center justify-between h-[80px] w-[919px] rounded-[30px] border-[1px] bg-white p-[24px] shadow-lg p-8">
       <div className="flex items-center">
-        <img src={logo} alt="Logo" className="w-8 h-8 mr-2" />
-        <h3 className="text-lg font-bold">{title}</h3>
+        <img src={"/logo1.jpg"} alt="Logo 1" className="w-17 h-12 mr-2" />
+        <div>
+          <h3 className="text-2xl font-bold">{"Social Media Assistant"}</h3>
+          <div className="font-epilogue font-normal text-[16px] text-[#7C8493] pt-1">
+            Yenigat Birhan. Addis Ababa, Ethiopia
+          </div>
+        </div>
       </div>
-      <div>
-          <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <div className="flex items-center">
+        <img src={"/link..jpg"} alt="Link" className="w-8 h-8 mr-2" />
+        <img src={"/dula.jpg"} alt="Dula" className="h-8 mr-2 " />
+        <div>
+          <a className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-[16px] cursor-pointer">
             Apply
           </a>
-        
+        </div>
       </div>
     </div>
   );
 };
 
-export default JobCard;
+export default MiniCard;
