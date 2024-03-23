@@ -4,7 +4,6 @@ import Logo from "./Logo";
 import Description from "./Description";
 import Tags from "./Tags";
 import Title from "./Title";
-
 import Organization from "./Organization";
 
 interface CardProps {

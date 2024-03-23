@@ -1,21 +1,31 @@
 [
-    { "id": 1 ,
-      "title": "Social Media Assistant",
-     "logo": "logo1.jpg" , 
-     "organization":"Young Men Christians Association. Addis Ababa , Ethiopia" },
-
-    { "id": 2 ,
-      "title": "Social Media Assistant", 
+  {
+    "id": 1,
+    "title": "Social Media Assistant",
+    "logo": "logo1.jpg",
+    "organization": "Young Men Christians Association. Addis Ababa, Ethiopia",
+    "description": "Description for Social Media Assistant"
+  },
+  {
+    "id": 2,
+    "title": "Social Media Assistant",
     "logo": "logo2.jpg",
-    "organization":"Young Men Christians Association , Addis Ababa , Ethiopia" },
-    { "id": 3 ,
-      "title": "Volunteer Teacher",
-     "logo": "logo3.jpg" ,
-     "organization":"School Under The Tree . Addis Ababa , Ethiopia" },
+    "organization": "Young Men Christians Association, Addis Ababa, Ethiopia",
+    "description": "Description for Social Media Assistant"
+  },
+  {
+    "id": 3,
+    "title": "Volunteer Teacher",
+    "logo": "logo3.jpg",
+    "organization": "School Under The Tree. Addis Ababa, Ethiopia",
+    "description": "Description for Volunteer Teacher"
+  },
+  {
+    "id": 4,
+    "title": "Social Media Assistant",
+    "logo": "logo4.jpg",
+    "organization": "African In Me. Addis Ababa, Ethiopia",
+    "description": "Description for Social Media Assistant"
+  }
+]
 
-    { "id": 4 ,
-      "title": "Social Media Assistant", 
-    "logo": "logo4.jpg" ,
-    "organization":"African In Me. Addis Ababa , Ethiopia"}
-  ]
-  
