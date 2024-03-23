@@ -2,7 +2,6 @@
 
 Here is a screenshot of the homepage:
 
-
 ![alt text](<public/page 1.jpg>)
 
 Here is a screenshot of the Job Lists Page:
@@ -14,6 +13,5 @@ Here is a screenshot of the Job Lists Page:
 
 
 Here is a screenshot of the JobLists Description Page
-
 
 ![alt text](<public/page 3.jpg>)
