@@ -35,7 +35,7 @@ interface Job {
         id: 4,
         title: "Social Media Assistant",
         logo: "logo4.jpg",
-        organization: "Young Men Christians Association, Addis Ababa, Ethiopia",
+        organization: "Africa In Me, Addis Ababa, Ethiopia",
         description: "  As a Social Media Assistant, you will work closely with the social media manager or marketing team to execute social media strategies and campaigns. You will be responsible for assisting in the creation and scheduling of engaging content, monitoring social media channels, and interacting with followers."
       },
    
