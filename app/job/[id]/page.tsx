@@ -28,7 +28,12 @@ const JobDetail = ({ params }: Props) => {
          
       <div className="flex flex-col items-center justify-center w-screen my-4">
       <div className="flex flex-col w-custom-width gap-10">
-      <MiniCard id={job.id} title={job.title} organization={job.organization} />
+      <MiniCard 
+        id={job.id} 
+        logo = {job.logo} 
+        title={job.title} 
+        organization={job.organization} 
+      />
       <h1 className="font-bold text-2xl pt-7">Description</h1>
         <Description />
         <Responsibilities />

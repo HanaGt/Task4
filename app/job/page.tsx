@@ -1,7 +1,6 @@
 //app/page.tsx
 
 import Card from "@/components/Card";
-import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
 import cardData from "@/Info/cardData.json"
 
@@ -20,10 +19,11 @@ export default function Home() {
             <p className="font-epilogue font-normal text-[16px] text-[#7C8493]">Most relevant</p>
             <FaAngleDown />
           </div>
+          
         </div>
       </div>
       <div>
-        {cardData.map((card, index) => (
+        {cardData.map((card) => (
           <Card 
           key={card.id} 
           title={card.title} 

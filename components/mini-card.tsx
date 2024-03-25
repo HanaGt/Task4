@@ -1,18 +1,23 @@
 import React from "react";
 import Link from "next/link";
+import Logo from "./Logo";
 
 interface MiniCardProps {
+  logo: string;
   id: number;
   title: string;
   organization: string;
 }
 
-const MiniCard: React.FC<MiniCardProps> = ({ id, title, organization }) => {
+const MiniCard: React.FC<MiniCardProps> = ({ id, title,logo , organization }) => {
   return (
     <Link href={`/job/${id}`} passHref>
       <div className="flex items-center justify-between h-[80px] w-[919px] rounded-[30px] border-[1px] bg-white p-[24px] shadow-lg p-8">
-        <div className="flex items-center">
-          <img src={`/logo${id}.jpg`} alt={`Logo ${id}`} className="w-17 h-12 mr-2" />
+        <div className="flex items-center ">
+        <div className="pr-5">
+          <Logo logo={logo} />
+          </div>
+
           <div>
             <h3 className="text-2xl font-bold">{title}</h3>
             <div className="font-epilogue font-normal text-[16px] text-[#7C8493] pt-1">
