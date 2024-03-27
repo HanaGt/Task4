@@ -10,11 +10,8 @@ export const OpportunityApi = createApi({
       query: () => "opportunities/search",
     }),
     getOpportunityById: builder.query<SingleOpportunities, String>({
-      query: (id) => `opportunities${id}`,
-      transformResponse:(response:any) => {
-        const jobj = response.data;
-        return jobj;
-      }
+      query: (id) => `opportunities/${id}`,
+      
     }),
   }),
 });

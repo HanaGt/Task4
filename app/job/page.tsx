@@ -1,7 +1,7 @@
 "use client"
 import Card from "@/components/Card";
 import { FaAngleDown } from "react-icons/fa";
-import { useGetOpportunitiesQuery } from "@/api/Slices/jobSlice";
+import { useGetOpportunitiesQuery } from "@/app/api/Slices/jobSlice";
 import Link from "next/link";
 
 export const Job = () => {

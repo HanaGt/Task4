@@ -27,7 +27,7 @@ const MiniCard: React.FC<{ Opportunity: Opportunity }> = ({ Opportunity }) => {
       </div>
 
       <div className="flex items-center">
-        <img src="/link.jpg" alt="Link" className="w-8 h-8 mr-2" />
+        <img src="/link..jpg" alt="Link" className="w-8 h-8 mr-2" />
         <img src="/dula.jpg" alt="Dula" className="h-8 mr-2" />
         <div>
           <a className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-[16px] cursor-pointer">
