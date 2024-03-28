@@ -1,48 +1,36 @@
-//app/page/[id]/page.tsx
+"use client"
 import Description from "@/components/Description";
-import IdealCandidate from "@/components/Candidates";
 import React from "react";
-import { getJob } from "@/Info/Dummy";
-import MiniCard from "@/components/mini-card";
 import Responsibilities from "@/components/Responsibilities";
 import Address from "@/components/Address";
+import { useGetOpportunityByIdQuery } from "@/api/Slices/jobSlice";
+import Candidates from "@/components/Candidates";
+import MiniCard from "@/components/mini-card";
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
+const JobDetail = ({ params }: { params: { id: string } }) => {
+ 
+  const id: string = params.id;
+  const { data: opportunity } = useGetOpportunityByIdQuery(id);
+  const responsibilities = opportunity?.data?.responsibilities.split("\n") || ["hiudfiujf"];
+  const idealCandidate = opportunity?.data?.idealCandidate.split("\n") || ["hgbfuvbhuf"];
 
-const JobDetail = ({ params }: Props) => {
-  const { id } = params;
-  const job = getJob(parseInt(id));
-
-  if (!job) {
-    return <div>Loading...</div>; 
-  }
   return (
-    <div className="flex flex-col items-center justify-center w-screen my-4 p-7">
-      <div className="flex flex-col w-custom-width gap-10 ">
-        
-        {/* <p>{job.description}</p> */}
-         
-      <div className="flex flex-col items-center justify-center w-screen my-4">
+    <>
+    <div>
+    {opportunity?.data ? (
+      <MiniCard Opportunity={opportunity.data} />
+    ) : null}
+</div>
+
+    <div className="flex flex-col items-center justify-center w-screen my-4">
       <div className="flex flex-col w-custom-width gap-10">
-      <MiniCard 
-        id={job.id} 
-        logo = {job.logo} 
-        title={job.title} 
-        organization={job.organization} 
-      />
-      <h1 className="font-bold text-2xl pt-7">Description</h1>
-        <Description />
-        <Responsibilities />
-        <IdealCandidate />
-        <Address />
+        <Description description={opportunity?.data?.description || "dewfrd"} />
+        <Responsibilities responsibilities={responsibilities} />
+        <Candidates Candidate={idealCandidate} />
+        <Address address={opportunity?.data?.whenAndWhere || "dsferfea"} />
       </div>
     </div>
-      </div>
-    </div>
+    </>
   );
 };
 

@@ -1,16 +1,16 @@
-// Description
-import React from "react";
+import { FC } from "react";
 
-const Description = () => {
+interface DescriptionProps {
+  description: string;
+}
+
+const Descriptions: FC<DescriptionProps> = ({ description }) => {
   return (
-    <div className="w-[744px] h-[112px]  text-[16px] leading-[25.6px] text-[#25324B] font-[400]">
-      As a Social Media Assistant, you will work closely with the social media
-      manager or marketing team to execute social media strategies and
-      campaigns. You will be responsible for assisting in the creation and
-      scheduling of engaging content, monitoring social media channels, and
-      interacting with followers.
+    <div className="flex flex-col gap-2">
+      <h1 className="font-bold text-2xl">Description</h1>
+      <p>{description}</p>
     </div>
   );
 };
 
-export default Description;
+export default Descriptions;

@@ -1,6 +1,8 @@
+
+import { FC } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 
-const Address = () => {
+const Address: FC<{ address: String }> = ({ address }) => {
   return (
     <div className="flex flex-col gap-3">
       <h1 className="font-bold text-2xl"> When & Where </h1>
@@ -9,8 +11,7 @@ const Address = () => {
           <FaLocationDot className="text-blue-500  border-gray-300 p-2 w-9 h-9" />
         </span>
         <span className="">
-          The onboarding event for this event will take place on Jan 18th, 2023
-          in AAU Auditorium
+          {address}
         </span>
       </div>
     </div>

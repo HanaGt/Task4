@@ -1,9 +1,9 @@
 // Tags
 import React from 'react';
 
-const Tags = () => {
+const relatedTopics = () => {
   return (
-    <div className="flex w-[242px] h-[31px] gap-[8px]">
+    <div className="flex w-[242px] h-[31px] gap-[8px] pt-2">
       <div className="bg-[#e0f5ef] w-[76px] h-[31px] rounded-[80px] p-[6px] gap-[8px] flex justify-center items-center">
         <div className="font-semibold text-[12px] text-[#56CDAD]">
           In person
@@ -27,4 +27,4 @@ const Tags = () => {
   );
 };
 
-export default Tags;
+export default relatedTopics;
