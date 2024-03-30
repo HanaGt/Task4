@@ -1,19 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { OpportunityApi} from "./Slices/jobSlice";
-import { setupListeners } from "@reduxjs/toolkit/query/react";
-
-
+import userReducer from "./auth/userSlice"
+import { authApiSlice } from "./auth/api/authSlice";
+import { OpportunityApi } from "./Slices/jobSlice";
 
 export const store = configureStore({
   reducer: {
+    user: userReducer,
     [OpportunityApi.reducerPath]: OpportunityApi.reducer,
+    [authApiSlice.reducerPath]: authApiSlice.reducer,
   },
-  devTools: process.env.NODE_ENV !== "production",
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({}).concat([OpportunityApi.middleware]),
+    getDefaultMiddleware().concat(OpportunityApi.middleware,
+      authApiSlice.middleware),
 });
-
-setupListeners(store.dispatch);
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

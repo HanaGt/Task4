@@ -10,6 +10,7 @@ interface JobState {
     errors: null | any; 
     count: number;
   }
+
   
   interface SingleOpportunities {
     data: Opportunity;
@@ -48,4 +49,34 @@ interface JobState {
     updatedAt: string;
     orgEmail: string;
   }
+  interface SignupRequest {
+    name: string;
+    email: string;
+    password: string;
+    confirmPassword: string;
+    role: string;
+  }
   
+  interface VerifyEmailRequest {
+    Email: string;
+    OTP: string;
+  }
+  
+  interface User {
+    accessToken: string;
+    refreshToken: string;
+    name: string;
+    email: string;
+    profilePicUrl: string;
+    role: string;
+    profileComplete: boolean;
+    profileStatus: string;
+  }
+  
+  interface VerifyEmailResponse {
+    data: User;
+    success: boolean;
+    message: string;
+    errors: null;
+    count: number;
+  }
