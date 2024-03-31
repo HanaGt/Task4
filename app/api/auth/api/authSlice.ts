@@ -13,19 +13,21 @@ export const authApiSlice = createApi({
         body: userData,
       }),
     }),
-    verifyEmail: builder.mutation<VerifyEmailResponse, VerifyEmailRequest>({
-      query: (data) => ({
-        url: '/verify-email',
-        method: 'POST',
-        body: data,
-      }),
-    }),
     signin: builder.mutation<VerifyEmailResponse, {email: string, password: string}>({
       query: (userData) => ({
         url: '/login',
         method: 'POST',
         body: userData,
       }),
+    }),
+    verifyEmail: builder.mutation<VerifyEmailResponse, VerifyEmailRequest>({
+      query: (data) => ({
+        url: '/verify-email',
+        method: 'POST',
+        body: data,
+      
+    }),
+    
     }),
   }),
 });

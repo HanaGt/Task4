@@ -25,10 +25,10 @@ const JobDetail = ({ params }: { params: { id: string } }) => {
       <MiniCard Opportunity={opportunity.data} />
     ) : null}
 </div>
-        <Description description={opportunity?.data?.description || "dewfrd"} />
+        <Description description={opportunity?.data?.description || ""} />
         <Responsibilities responsibilities={responsibilities} />
         <Candidates Candidate={idealCandidate} />
-        <Address address={opportunity?.data?.whenAndWhere || "dsferfea"} />
+        <Address address={opportunity?.data?.whenAndWhere || ""} />
       </div>
     </div>
     </>
